@@ -1,0 +1,645 @@
+
+--Made by : https://v3rmillion.net/member.php?action=profile&uid=244024
+-- init
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/iamstillcool/ui/main/rgesgsegfd"))() --someone reuploaded it so I put it in place of the original back up so guy can get free credit.
+local venyx = library.new("Booga made by zzl#0001", 5013109572)
+
+-- themes
+local themes = {
+Background = Color3.fromRGB(24, 24, 24),
+Glow = Color3.fromRGB(0, 0, 0),
+Accent = Color3.fromRGB(10, 10, 10),
+LightContrast = Color3.fromRGB(20, 20, 20),
+DarkContrast = Color3.fromRGB(14, 14, 14),  
+TextColor = Color3.fromRGB(255, 255, 255)
+}
+
+-- first page
+local page = venyx:addPage("Test", 5012544693)
+local section1 = page:addSection("Lemons Tank")
+local section2 = page:addSection("Plant Box")
+section1:addToggle('AutoEat', nil, function(t)
+if t then
+_G.AutoEat = true
+while wait() do
+if _G.AutoEat then
+    for y = 1,6 do
+    game.ReplicatedStorage.Events.UseBagItem:FireServer("Lemon")
+      end
+end end
+else
+    end 
+_G.AutoEat = false
+end)
+section1:addTextbox("Notification", "Default", function(value, focusLost)
+print("Input", value)
+
+if focusLost then
+venyx:Notify("Title", value)
+end
+end)
+
+
+section2:addButton("15x15", function()
+    local LocalPlayer = game:GetService("Players").LocalPlayer 
+local RootPart = LocalPlayer.Character.HumanoidRootPart 
+local cframe = RootPart.CFrame
+
+local Remote = game:GetService("ReplicatedStorage").Events.PlaceStructure 
+Remote:FireServer("Plant Box", cframe * CFrame.new(7, -3, -7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(0, -3, -14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(0, -3, -21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(0, -3, -28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(0, -3, -35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(0, -3, -42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(0, -3, -49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(0,  -3,  7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(0,  -3,  14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(0,  -3,  21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(0,  -3,  28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(0,  -3,  35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(0,  -3,  42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(0,  -3,  49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(0,  -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(7, -3, -7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(7, -3, -14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(7, -3, -21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(7, -3, -28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(7, -3, -35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(7, -3, -42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(7, -3, -49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(7,  -3,  7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(7,  -3,  14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(7,  -3,  21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(7,  -3,  28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(7,  -3,  35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(7,  -3,  42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(7,  -3,  49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(7,  -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(0,  -3,  -7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-7, -3, -7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-7, -3, -14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-7, -3, -21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-7, -3, -28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-7, -3, -35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-7, -3, -42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-7, -3, -49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-7,  -3,  7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-7,  -3,  14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-7,  -3,  21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-7,  -3,  28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-7,  -3,  35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-7,  -3,  42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-7,  -3,  49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-7,  -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 14, -3,  -7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 14, -3, -14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 14, -3, -21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 14, -3, -28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 14, -3, -35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 14, -3, -42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 14, -3, -49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 14,  -3,  7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 14,  -3,  14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 14,  -3,  21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 14,  -3,  28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 14,  -3,  35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 14,  -3,  42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 14,  -3,  49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 14,  -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -14, -3,  -7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -14, -3, -14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -14, -3, -21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -14, -3, -28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -14, -3, -35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -14, -3, -42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -14, -3, -49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -14,  -3,  7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -14,  -3,  14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -14,  -3,  21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -14,  -3,  28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -14,  -3,  35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -14,  -3,  42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -14,  -3,  49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -14,  -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 21, -3,  -7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 21, -3, -14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 21, -3, -21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 21, -3, -28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 21, -3, -35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 21, -3, -42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 21, -3, -49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 21,  -3,  7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 21,  -3,  14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 21,  -3,  21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 21,  -3,  28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 21,  -3,  35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 21,  -3,  42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 21,  -3,  49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 21,  -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -21, -3,  -7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -21, -3, -14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -21, -3, -21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -21, -3, -28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -21, -3, -35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -21, -3, -42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -21, -3, -49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -21,  -3,  7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -21,  -3,  14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -21,  -3,  21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -21,  -3,  28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -21,  -3,  35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -21,  -3,  42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -21,  -3,  49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -21,  -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 28, -3,  -7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 28, -3, -14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 28, -3, -21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 28, -3, -28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 28, -3, -35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 28, -3, -42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 28, -3, -49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 28,  -3,  7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 28,  -3,  14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 28,  -3,  21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 28,  -3,  28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 28,  -3,  35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 28,  -3,  42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 28,  -3,  49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 28,  -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -28, -3,  -7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -28, -3, -14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -28, -3, -21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -28, -3, -28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -28, -3, -35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -28, -3, -42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -28, -3, -49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -28,  -3,  7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -28,  -3,  14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -28,  -3,  21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -28,  -3,  28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -28,  -3,  35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -28,  -3,  42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -28,  -3,  49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -28,  -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 35, -3,  -7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 35, -3, -14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 35, -3, -21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 35, -3, -28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 35, -3, -35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 35, -3, -42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 35, -3, -49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 35,  -3,  7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 35,  -3,  14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 35,  -3,  21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 35,  -3,  28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 35,  -3,  35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 35,  -3,  42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 35,  -3,  49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 35,  -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -35, -3,  -7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -35, -3, -14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -35, -3, -21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -35, -3, -28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -35, -3, -35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -35, -3, -42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -35, -3, -49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -35,  -3,  7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -35,  -3,  14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -35,  -3,  21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -35,  -3,  28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -35,  -3,  35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -35,  -3,  42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -35,  -3,  49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -35,  -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 42, -3,  -7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 42, -3, -14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 42, -3, -21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 42, -3, -28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 42, -3, -35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 42, -3, -42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 42, -3, -49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 42,  -3,  7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 42,  -3,  14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 42,  -3,  21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 42,  -3,  28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 42,  -3,  35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 42,  -3,  42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 42,  -3,  49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( 42,  -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -42, -3,  -7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -42, -3, -14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -42, -3, -21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -42, -3, -28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -42, -3, -35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -42, -3, -42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -42, -3, -49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -42,  -3,  7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -42,  -3,  14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -42,  -3,  21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -42,  -3,  28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -42,  -3,  35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -42,  -3,  42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -42,  -3,  49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new( -42,  -3,  0), 0)
+
+    end)
+section2:addButton("PP", function()
+     local LocalPlayer = game:GetService("Players").LocalPlayer 
+local RootPart = LocalPlayer.Character.HumanoidRootPart 
+local cframe = RootPart.CFrame
+
+local Remote = game:GetService("ReplicatedStorage").Events.PlaceStructure 
+    Remote:FireServer("Plant Box", cframe * CFrame.new(3, -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(10, -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(17, -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(24, -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(31, -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(3, -3,  7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(3, -3,  14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(3, -3,  21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(3, -3,  28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(10, -3,  28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(17, -3,  28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(24, -3,  28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(31, -3,  28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(31, -3,  7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(31, -3,  14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(31, -3,  21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-3, -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-10, -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-17, -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-24, -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-31, -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-3, -3,  7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-3, -3,  14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-3, -3,  21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-3, -3,  28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-10, -3,  28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-17, -3,  28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-24, -3,  28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-31, -3,  28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-31, -3,  7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-31, -3,  14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-31, -3,  21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(7, -3,  -7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(7, -3,  -14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(7, -3,  -21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(7, -3,  -28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(7, -3,  -35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(7, -3,  -42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(7, -3,  -49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(0, -3,  -49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-7, -3,  -49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-14, -3,  -49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-7, -3,  -7), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-7, -3,  -14), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-7, -3,  -21), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-7, -3,  -28), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-7, -3,  -35), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-7, -3,  -42), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-7, -3,  -49), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(0, -3,  -35), 0)
+end)
+section2:addButton("F U", function()
+     local LocalPlayer = game:GetService("Players").LocalPlayer 
+local RootPart = LocalPlayer.Character.HumanoidRootPart 
+local cframe = RootPart.CFrame
+
+local Remote = game:GetService("ReplicatedStorage").Events.PlaceStructure 
+
+Remote:FireServer("Plant Box", cframe * CFrame.new(-20,  -3,  -8), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-20,  -3,  -16), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-20,  -3,  -24), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-20,  -3,  -32), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-20,  -3,  -40), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-4,  -3,  -40), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-12,  -3,  -40), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-4,  -3,  -24), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(-12,  -3,  -24), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(11,  -3,  -24), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(11,  -3,  -16), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(11,  -3,  -8), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(11,  -3,  -8), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(11,  -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(19,  -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(27,  -3,  0), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(27,  -3,  -8), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(27,  -3,  -16), 0)
+Remote:FireServer("Plant Box", cframe * CFrame.new(27,  -3,  -24), 0)
+    end)
+section2:addButton("2000 Plant Boxes", function()
+    local LocalPlayer = game:GetService("Players").LocalPlayer 
+local RootPart = LocalPlayer.Character.HumanoidRootPart 
+local cframe = RootPart.CFrame
+
+local Remote = game:GetService("ReplicatedStorage").Events.PlaceStructure 
+for x = 1,500 do
+ Remote:FireServer("Plant Box", cframe * CFrame.new(4, -3,  -7), 0)
+ Remote:FireServer("Plant Box", cframe * CFrame.new(-4, -3,  -7), 0)
+  Remote:FireServer("Plant Box", cframe * CFrame.new(12, -3,  -7), 0)
+ Remote:FireServer("Plant Box", cframe * CFrame.new(-12, -3,  -7), 0)
+end
+end)
+
+section2:addButton("1000 Plant Boxes", function()
+    local LocalPlayer = game:GetService("Players").LocalPlayer 
+local RootPart = LocalPlayer.Character.HumanoidRootPart 
+local cframe = RootPart.CFrame
+
+local Remote = game:GetService("ReplicatedStorage").Events.PlaceStructure 
+for x = 1,250 do
+ Remote:FireServer("Plant Box", cframe * CFrame.new(4, -3,  -7), 0)
+ Remote:FireServer("Plant Box", cframe * CFrame.new(-4, -3,  -7), 0)
+  Remote:FireServer("Plant Box", cframe * CFrame.new(12, -3,  -7), 0)
+ Remote:FireServer("Plant Box", cframe * CFrame.new(-12, -3,  -7), 0)
+end
+end)
+
+section2:addKeybind("Open/Close Gui", Enum.KeyCode.RightAlt, function()
+print("Activated Keybind")
+venyx:toggle()
+end, function()
+print("Changed Keybind")
+end)
+
+-- second page
+local theme = venyx:addPage("Misc", 5012544693)
+local colors = theme:addSection("Theme")
+for theme, color in pairs(themes) do -- all in one theme changer, i know, im cool
+colors:addColorPicker(theme, color, function(color3)
+venyx:setTheme(theme, color3)
+end)
+end
+local Section2 = theme:addSection("Stuff (Scroll down)")
+local Section3 = theme:addSection("Dupe")
+Section2:addButton("Inf Yield", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+Section2:addButton("Reviz Admin", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/Caniwq2N'),true))()
+end)
+Section2:addButton("Booga Revamp v2", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/e03KTVta'),true))()
+    end)
+    Section3:addButton("Craft 1000 Leaf Bags", function()
+        for y = 1,1000 do
+            game:GetService("ReplicatedStorage").Events.CraftItem:FireServer("Leaf Bag")
+        end
+    end)
+Section3:addButton("Market Script", function()
+    
+game:GetService("Players").LocalPlayer.PlayerGui.MainGui.Panels.Card.List.Market.Visible = true
+    end)
+Section3:addButton("Instant Crash Server (500 leaf bags required)", function()
+    
+local event = game:GetService("ReplicatedStorage").Events.DropBagItem
+for x = 1, 1000 do
+        event:FireServer("Leaf Bag")
+        event:FireServer("Leaf Bag")
+        event:FireServer("Leaf Bag")
+    task.wait()
+end
+local event = game:GetService("ReplicatedStorage").Events.DropBagItem
+for x = 1, 1000 do
+        event:FireServer("Leaf Bag")
+        event:FireServer("Leaf Bag")
+        event:FireServer("Leaf Bag")
+    task.wait()
+end
+local event = game:GetService("ReplicatedStorage").Events.DropBagItem
+for x = 1, 1000 do
+        event:FireServer("Leaf Bag")
+        event:FireServer("Leaf Bag")
+        event:FireServer("Leaf Bag")
+    task.wait()
+end
+end)
+Section3:addButton("How to dupe", function()
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Check dev console.";
+    Text = "Press F9 to access console, the explaination is there."
+    })
+print("To dupe with the market, you need two roblox clients, go and download multi rblx tool or roblox account manager (open before joining any game) after that, execute this script on both accounts and go to market. Place an item (any amount) for 1 coin and buy it on one account. Leave the server on the account you bought it on. Crash the server with the crash button on the account you sold on with the crash button (500 leaf bags required) leave and rejoin on both accounts and if you have the items on both it was a success.")
+end)
+local ok = venyx:addPage("Plant", 5012544693)
+local section = ok:addSection("U to plant I to collect")
+section:addButton("Bloodfruit", function()
+    
+
+local placekey = "e4yhioehrgisehigosejiogsejiog"
+local plantkey = "u"
+local collectkey = "i"
+local amountofpots = 40  ----------------oh yeah i forgot to mention this but you actually need to have the leaves and sticks required to make x number of plant pots
+
+----------------no touchy below plz
+
+local Player = game:GetService("Players").LocalPlayer
+local Mouse = Player:GetMouse()
+
+_G.plant = function()
+    for _, v in pairs(workspace.Deployables:GetChildren()) do
+        if v.Name == "Plant Box" and (Player.Character.Head.Position - v.PrimaryPart.Position).magnitude < 500 then
+            game.ReplicatedStorage.Events.InteractStructure:FireServer(v, "Bloodfruit")
+        end
+    end
+end
+
+_G.collect = function()
+    for _, v in pairs(workspace:GetChildren()) do
+        if v.Name == "Bloodfruit Bush" and (Player.Character.Head.Position - v.PrimaryPart.Position).magnitude < 50 then
+            game.ReplicatedStorage.Events.Pickup:FireServer(v)
+        end
+    end
+end
+
+Mouse.KeyUp:connect(function(k)
+    if k == placekey then
+        for i = 1, amountofpots do
+            game.ReplicatedStorage.Events.PlaceStructure:FireServer("Plant Box", Mouse.Hit, 0)
+        end
+    elseif k == plantkey then
+        _G.plant()
+    elseif k == collectkey then
+        _G.collect()
+    end
+end)
+
+end)
+section:addButton("Jelly", function()
+    local placekey = "e4yhioehrgisehigosejiogsejiog"
+local plantkey = "u"
+local collectkey = "i"
+local amountofpots = 40  ----------------oh yeah i forgot to mention this but you actually need to have the leaves and sticks required to make x number of plant pots
+
+----------------no touchy below plz
+
+local Player = game:GetService("Players").LocalPlayer
+local Mouse = Player:GetMouse()
+
+_G.plant = function()
+    for _, v in pairs(workspace.Deployables:GetChildren()) do
+        if v.Name == "Plant Box" and (Player.Character.Head.Position - v.PrimaryPart.Position).magnitude < 500 then
+            game.ReplicatedStorage.Events.InteractStructure:FireServer(v, "Jelly")
+        end
+    end
+end
+
+_G.collect = function()
+    for _, v in pairs(workspace:GetChildren()) do
+        if v.Name == "Jelly Crop" and (Player.Character.Head.Position - v.PrimaryPart.Position).magnitude < 50 then
+            game.ReplicatedStorage.Events.Pickup:FireServer(v)
+        end
+    end
+end
+
+Mouse.KeyUp:connect(function(k)
+    if k == placekey then
+        for i = 1, amountofpots do
+            game.ReplicatedStorage.Events.PlaceStructure:FireServer("Plant Box", Mouse.Hit, 0)
+        end
+    elseif k == plantkey then
+        _G.plant()
+    elseif k == collectkey then
+        _G.collect()
+    end
+end)
+end)
+
+section:addButton("Apple", function()
+  local placekey = "e4yhioehrgisehigosejiogsejiog"
+local plantkey = "u"
+local collectkey = "i"
+local amountofpots = 40  ----------------oh yeah i forgot to mention this but you actually need to have the leaves and sticks required to make x number of plant pots
+
+----------------no touchy below plz
+
+local Player = game:GetService("Players").LocalPlayer
+local Mouse = Player:GetMouse()
+
+_G.plant = function()
+    for _, v in pairs(workspace.Deployables:GetChildren()) do
+        if v.Name == "Plant Box" and (Player.Character.Head.Position - v.PrimaryPart.Position).magnitude < 500 then
+            game.ReplicatedStorage.Events.InteractStructure:FireServer(v, "Apple")
+        end
+    end
+end
+
+_G.collect = function()
+    for _, v in pairs(workspace:GetChildren()) do
+        if v.Name == "Apple Tree" and (Player.Character.Head.Position - v.PrimaryPart.Position).magnitude < 50 then
+            game.ReplicatedStorage.Events.Pickup:FireServer(v)
+        end
+    end
+end
+
+Mouse.KeyUp:connect(function(k)
+    if k == placekey then
+        for i = 1, amountofpots do
+            game.ReplicatedStorage.Events.PlaceStructure:FireServer("Plant Box", Mouse.Hit, 0)
+        end
+    elseif k == plantkey then
+        _G.plant()
+    elseif k == collectkey then
+        _G.collect()
+    end
+end)  
+end)
+
+section:addButton("Berry", function()
+    local placekey = "e4yhioehrgisehigosejiogsejiog"
+local plantkey = "u"
+local collectkey = "i"
+local amountofpots = 40  ----------------oh yeah i forgot to mention this but you actually need to have the leaves and sticks required to make x number of plant pots
+
+----------------no touchy below plz
+
+local Player = game:GetService("Players").LocalPlayer
+local Mouse = Player:GetMouse()
+
+_G.plant = function()
+    for _, v in pairs(workspace.Deployables:GetChildren()) do
+        if v.Name == "Plant Box" and (Player.Character.Head.Position - v.PrimaryPart.Position).magnitude < 500 then
+            game.ReplicatedStorage.Events.InteractStructure:FireServer(v, "Berry")
+        end
+    end
+end
+
+_G.collect = function()
+    for _, v in pairs(workspace:GetChildren()) do
+        if v.Name == "Berry Bush" and (Player.Character.Head.Position - v.PrimaryPart.Position).magnitude < 50 then
+            game.ReplicatedStorage.Events.Pickup:FireServer(v)
+        end
+    end
+end
+
+Mouse.KeyUp:connect(function(k)
+    if k == placekey then
+        for i = 1, amountofpots do
+            game.ReplicatedStorage.Events.PlaceStructure:FireServer("Plant Box", Mouse.Hit, 0)
+        end
+    elseif k == plantkey then
+        _G.plant()
+    elseif k == collectkey then
+        _G.collect()
+    end
+end)
+end)
+local awe = venyx:addPage("Quick Craft", 5012544693)
+local section12 = awe:addSection("Misc #2")
+section12:addButton("God Rock", function()
+    local args = {
+    [1] = "God Rock"
+}
+game:GetService("ReplicatedStorage").Events.CraftItem:FireServer(unpack(args))
+
+    end)
+section12:addButton("God Halo", function()
+    local args = {
+    [1] = "God Halo"
+}
+game:GetService("ReplicatedStorage").Events.CraftItem:FireServer(unpack(args))
+
+    end)
+section12:addButton("God Chestplate", function()
+        local args = {
+    [1] = "God ChestPlate"
+}
+game:GetService("ReplicatedStorage").Events.CraftItem:FireServer(unpack(args))
+end)
+section12:addButton("God Legs", function()
+    local args = {
+    [1] = "God Legs"
+}
+game:GetService("ReplicatedStorage").Events.CraftItem:FireServer(unpack(args))
+
+    end)
+section12:addButton("God Pick", function()
+        local args = {
+    [1] = "God Pick"
+}
+game:GetService("ReplicatedStorage").Events.CraftItem:FireServer(unpack(args))
+end)
+section12:addButton("God Axe", function()
+    local args = {
+[1] = "God Axe"
+}
+game:GetService("ReplicatedStorage").Events.CraftItem:FireServer(unpack(args))
+end)
+local Page2 = venyx:addPage("Misc #2", 5012544693)
+local section5 = Page2:addSection("Drop Items")
+    section5:addTextbox("Item", "", function(a)
+        print("Input", a)
+        getgenv().dropitem = a
+        end)
+        section5:addTextbox("Amount", "", function(a)
+        print("Input", a)
+        getgenv().dropamount = a
+        end)
+        section5:addButton("Drop", function(a)
+        print("Clicked")
+        for i=1, dropamount do game.ReplicatedStorage.Events.DropBagItem:FireServer(dropitem) 
+        end
+        end)
+-- load
+venyx:SelectPage(venyx.pages[1], true) -- no default for more freedom
